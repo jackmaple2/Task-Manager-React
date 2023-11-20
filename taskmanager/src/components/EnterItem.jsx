@@ -2,6 +2,7 @@ import React from "react";
 
 export default function EnterItem(props) {
 
+    
 
     return (
         <div className="container">

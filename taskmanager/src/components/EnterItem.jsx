@@ -4,10 +4,12 @@ export default function EnterItem(props) {
 
 
     return (
-        <div>
-            <label htmlFor="task-field">New task: </label>
-            <input type="text"></input>
-            <button className="btn btn-primary" type="button" >Add Task</button>
+        <div className="container">
+            <div className="text-center">
+                <label htmlFor="task-field">New task: </label>
+                <input type="text"></input>
+                <button className="btn btn-primary" type="button" >Add Task</button>
+            </div>
         </div>
     )
 }

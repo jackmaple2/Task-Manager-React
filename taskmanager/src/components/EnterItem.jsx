@@ -2,10 +2,10 @@ import React, { useState } from "react";
 
 export default function EnterItem(props) {
 
-    const [newTask, setNewTask] =useState('');
+    const [newTask, setNewTask] = useState('')
 
     function addItemButtonPressed() {
-        props.addItem({tasks: newTask});
+        props.addTask({task: newTask});
         setNewTask('');
     }
 
@@ -13,7 +13,7 @@ export default function EnterItem(props) {
         <div className="container">
             <div className="text-center">
                 <label htmlFor="task-field">New task: </label>
-                <input type="text"></input>
+                <input type="text" value={newTask} onChange={(e) => setNewTask(e.target.value)} ></input>
                 <button className="btn btn-primary" type="button" onClick={addItemButtonPressed} >Add Task</button>
             </div>
         </div>
